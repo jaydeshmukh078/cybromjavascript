@@ -33,4 +33,4 @@
 var a = prompt("enter first number")
 var b = prompt("enter second number")
 
-prompt()
+console.log(a+b)
