@@ -6,7 +6,9 @@ function second() {
 }
 function third() {
     alert("third function called")
-}
+}  
+
+
 
 // substring
 // tolowercase
