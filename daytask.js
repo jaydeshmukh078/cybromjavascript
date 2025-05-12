@@ -10,8 +10,99 @@ function third() {
 
 
 
-// substring
-// tolowercase
-// touppercase
-// Charat 
-// charcode
+function len(){
+    let text="siddarth" //string
+console.log(text.length) //length of the string
+}
+len() //output 8
+
+// 2.slice()
+ let text="this isstringfrom cybrom"
+ console.log(text.slice(7,13)) //output this is string
+
+ //6 touppercase()
+ function upper(){
+    let text="this is capital letter"
+    console.log(text.toUpperCase()) //output THIS IS CAPITAL LETTER
+ }
+ upper() //output THIS IS CAPITAL LETTER
+
+ //7. tolowercase()
+ function lower(){
+    let text="THIS IS SMALL LETTER"
+    console.log(text.toLowerCase()) //output this is small letter
+ }
+ lower() //output this is small letter
+
+//  3.concat()
+function concat(){
+    let a="Anshul"
+    let b="Gajbhiye"
+    console.log(a.concat(" ," ,b))
+}
+concat()
+
+//4. Substring()
+function substring(){
+    let text="this is substring"
+    console.log(text.substring(5,7))
+
+}
+substring()
+
+
+//8.trim()
+function trim(){
+    let text="     text    jsdhdjf     "
+    console.log(text.trim())
+}
+trim()
+
+//10.charAt()  (perticular charecter ko nikalti hai )
+function charat(){
+    let text="this is charat"
+    console.log(text.charAt(2)) //output i
+    console.log(text.charAt(5))
+    console.log(text.charAt(8))
+}
+charat()
+
+
+//11.charcodeAt() (charecter ka uanic code nikalke deta hai  )
+function charCodeAt(){
+    let text="this is charCodeAt"
+    let emoji="😅"
+    console.log(text.charCodeAt(2))
+    console.log(text.charCodeAt(18))
+    console.log(emoji.charCodeAt(0))
+}
+charCodeAt()
+
+//12.indexOf()
+function indexOf(){
+    let text="this is indexof"
+    console.log(text.indexOf("f"))
+}
+indexOf()
+
+// replace
+function replace(){
+    let text="this is replace this"
+    let text2="this is replace This"
+    console.log(text.replace("this","jsd")) //output jsd is replace this //only one
+    console.log(text.replace(/this/g,"jsd")) //output jsd is jsd //globel
+    console.log(text2.replace(/this/gi,"jsd")) //output jsd is jsd //globel with case insensitive
+    console.log(text.replaceAll("this","jsd")) //output jsd is jsd //all
+}
+replace()
+
+//split
+function split(){
+    let text="this is split"
+    console.log(text.split(" "))
+    console.log(text.split(" ",2)) //output ["this","is"]
+    console.log(text.split(" ",3)) //output ["this","is","split"]
+    console.log(text.split(" ",4)) //output ["this","is","split",""]
+    console.log(text.split(" ",5)) //output ["this","is","split","",""]
+    }
+    split()
