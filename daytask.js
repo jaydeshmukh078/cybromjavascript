@@ -106,3 +106,17 @@ function split(){
     console.log(text.split(" ",5)) //output ["this","is","split","",""]
     }
     split()
+
+
+// Classwork 13/05/2025
+
+function classwork() {
+
+    let a="we are from"
+    let b=' "cybrom"'
+    let c=" which is in"
+    let d=" 'Bhopal'"
+
+    alert(a+b+c+d)
+    
+}
