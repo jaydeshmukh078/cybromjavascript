@@ -138,5 +138,6 @@ function classwork2(){
     let arr=["alfa","beta","gama"]
 
     document.write(arr.pop())
+    
 }
 classwork2()
