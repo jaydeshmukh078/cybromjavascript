@@ -45,26 +45,26 @@
 
 
 
-// -------------------Object------------------------------------------- 
-let obj = {
-    name: "anshul",
-    // name: "jay",   // always uniqe
-    age: 25,
-    city: "delhi",
-    state: "uttar pradesh",
-    hobbies: ["cricket", "football", "reading"],
-    fun:function() {
-        console.log("welcome to the function");
-    }
-}
-obj.fun()
-console.log(obj.name);
-obj.college = "RGPV"     // add data
-console.log(obj.city);
-console.log(obj.hobbies[0]);   // array access
-delete obj.name  // delete data
-obj.age = 26   //update data
-console.log(obj);
+// // -------------------Object------------------------------------------- 
+// let obj = {
+//     name: "anshul",
+//     // name: "jay",   // always uniqe
+//     age: 25,
+//     city: "delhi",
+//     state: "uttar pradesh",
+//     hobbies: ["cricket", "football", "reading"],
+//     fun:function() {
+//         console.log("welcome to the function");
+//     }
+// }
+// obj.fun()
+// console.log(obj.name);
+// obj.college = "RGPV"     // add data
+// console.log(obj.city);
+// console.log(obj.hobbies[0]);   // array access
+// delete obj.name  // delete data
+// obj.age = 26   //update data
+// console.log(obj);
 
 
 
