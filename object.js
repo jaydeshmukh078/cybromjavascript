@@ -245,3 +245,6 @@
 
 // Q1. what is call back function?
 // Q2. what is higher order function?
+
+
+
