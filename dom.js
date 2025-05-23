@@ -1,24 +1,38 @@
 'use strict'
 
-let myname=()=>{
+// let myname=()=>{
 
-    document.querySelector("#myname").innerHTML = "Jay";
-    document.querySelector("#myname1").innerHTML = "Jay deshmukh";
+//     document.querySelector("#myname").innerHTML = "Jay";
+//     document.querySelector("#myname1").innerHTML = "Jay deshmukh";
     
+// }
+
+// let surname=()=>{
+
+//    let mytag = document.querySelector(".surname")
+//    let mytag1 = document.querySelector(".surname")
+
+//   mytag.innerHTML = "jay Deshmukh";
+//   mytag1.innerHTML = "jay";
+
+
+//   // make 3 button already write a string 
+//   // change color (red button to red)
+//   // change color (green button to green)
+//   // change color (blue button to blue)
+    
+// }
+
+
+let red=()=>{
+  let mytag = document.querySelector("#changecolor")
+   mytag.style.color = "red"
 }
-
-let surname=()=>{
-
-   let mytag = document.querySelector(".surname")
-   let mytag1 = document.querySelector(".surname")
-
-  mytag.innerHTML = "jay Deshmukh";
-  mytag1.innerHTML = "jay";
-
-
-  // make 3 button already write a string 
-  // change color (red button to red)
-  // change color (green button to green)
-  // change color (blue button to blue)
-    
+let green=()=>{
+  let mytag = document.querySelector("#changecolor")
+   mytag.style.color = "green"
+}
+let blue=()=>{
+  let mytag = document.querySelector("#changecolor")
+   mytag.style.color = "blue"
 }
