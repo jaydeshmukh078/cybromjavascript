@@ -23,16 +23,30 @@
     
 // }
 
+let mytag = document.querySelector("#changecolor")
 
 let red=()=>{
-  let mytag = document.querySelector("#changecolor")
-   mytag.style.color = "red"
+   mytag.style.backgroundImage = "url('download.jpeg')"
+   mytag.style.borderColor = "blue" 
+   mytag.style.borderWidth = "10px"
 }
+
+
 let green=()=>{
-  let mytag = document.querySelector("#changecolor")
-   mytag.style.color = "green"
+  mytag.style.backgroundImage = "url('download 2.jpeg')"
+    mytag.style.borderColor = "red" 
+   mytag.style.borderWidth = "10px"
 }
+
+
 let blue=()=>{
-  let mytag = document.querySelector("#changecolor")
-   mytag.style.color = "blue"
+  mytag.style.backgroundImage = "url('download 1.jpeg')"
+    mytag.style.borderColor = "green" 
+   mytag.style.borderWidth = "10px"
+}
+
+let reset=()=>{
+ mytag.style.backgroundImage = ""
+    mytag.style.borderColor = "" 
+   mytag.style.borderWidth = ""
 }
