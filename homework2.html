@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homwork</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+
+        body {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .first {
+            text-align: center;
+        }
+
+        .first ul #mainimg {
+            background-image: url(/watch/main.jpeg);
+            background-size: contain;
+            background-position: center;
+            width : 455px; 
+            height:450px; 
+        }
+
+        .first ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .first img {
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="first">
+
+       <ul>
+        <li  id="mainimg"></li>
+       </ul>
+
+        <ul style="list-style: none;">
+            <li><img id="img11" onclick="imgchange11()" src="/watch/1.jpeg" alt="" width="70px"></li>
+            <li><img id="img22" onclick="imgchange22()" src="/watch/2.jpeg" alt="" width="70px"></li>
+            <li><img id="img33" onclick="imgchange33()" src="/watch/3.jpeg" alt="" width="70px"></li>
+            <li><img id="img33" onclick="imgchange44()" src="/watch/4.jpeg" alt="" width="70px"></li>
+            <li><img id="img44" onclick="imgchange55()" src="/watch/5.jpeg" alt="" width="70px"></li>
+        </ul>
+
+    </section>
+
+
+
+    <script>
+        let mytag = document.querySelector("#mainimg")
+
+        let imgchange11 = () => {
+            mytag.style.backgroundImage = "url('/watch/1.jpeg')"
+        }
+
+        let imgchange22 = () => {
+            mytag.style.backgroundImage = "url('/watch/2.jpeg')"
+        }
+
+        let imgchange33 = () => {
+            mytag.style.backgroundImage = "url('/watch/3.jpeg')"
+        }
+
+        let imgchange44 = () => {
+            mytag.style.backgroundImage = "url('/watch/4.jpeg')"
+        }
+
+        let imgchange55 = () => {
+            mytag.style.backgroundImage = "url('/watch/5.jpeg')"
+        }
+    </script>
+</body>
+
+</html>
