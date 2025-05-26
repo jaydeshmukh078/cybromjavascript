@@ -6,84 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homwork</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box; 
-        }
-
-        body {
+        div {
             text-align: center;
-            padding: 50px;
+            border: 2px solid gray;
         }
 
-        .first {
+        h1 {
             text-align: center;
         }
 
-        .first ul #mainimg {
-            background-image: url(/watch/main.jpeg);
-            background-size: contain;
-            background-position: center;
-            width : 455px; 
-            height:450px; 
-        }
-
-        .first ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .first img {
-            border-radius: 3px;
+        button {
+            margin: 10px;
         }
     </style>
 </head>
 
 <body>
+    <div>
+        <h1 id="NUM">10</h1>
 
-    <section class="first">
-
-       <ul>
-        <li  id="mainimg"></li>
-       </ul>
-
-        <ul style="list-style: none;">
-            <li><img id="img11" onclick="imgchange11()" src="/watch/1.jpeg" alt="" width="70px"></li>
-            <li><img id="img22" onclick="imgchange22()" src="/watch/2.jpeg" alt="" width="70px"></li>
-            <li><img id="img33" onclick="imgchange33()" src="/watch/3.jpeg" alt="" width="70px"></li>
-            <li><img id="img33" onclick="imgchange44()" src="/watch/4.jpeg" alt="" width="70px"></li>
-            <li><img id="img44" onclick="imgchange55()" src="/watch/5.jpeg" alt="" width="70px"></li>
-        </ul>
-
-    </section>
+        <button onmouseleave="INCREAMENT()">INCREAMENT</button>
+        <button ondblclick="DECREAMENT()">DECREAMENT</button>
+        <!-- onmouseenter,ondblclick,onclick,onmouseleave, -->
+    </div>
+    <div onmouseenter="change1()" onmouseleave="change2()" id="box"
+        style="height: 500px ; width: 1000px; border: 1px solid black; background-color: antiquewhite;"></div>
 
 
 
     <script>
-        let mytag = document.querySelector("#mainimg")
-
-        let imgchange11 = () => {
-            mytag.style.backgroundImage = "url('/watch/1.jpeg')"
+        let INCREAMENT = () => {
+            let mytag = document.querySelector("#NUM")
+            let value = mytag.innerHTML
+            mytag.innerHTML = parseInt(value) + 1
+        }
+        let DECREAMENT = () => {
+            let mytag = document.querySelector("#NUM")
+            let value = mytag.innerHTML
+            if (value == 0) {
+                alert("you cant decreament from 0")
+            }
+            else {
+                mytag.innerHTML = parseInt(value) - 1
+            }
         }
 
-        let imgchange22 = () => {
-            mytag.style.backgroundImage = "url('/watch/2.jpeg')"
+        let change1 = () => {
+            let my = document.querySelector("#box")
+            my.style.backgroundColor = "red"
         }
-
-        let imgchange33 = () => {
-            mytag.style.backgroundImage = "url('/watch/3.jpeg')"
-        }
-
-        let imgchange44 = () => {
-            mytag.style.backgroundImage = "url('/watch/4.jpeg')"
-        }
-
-        let imgchange55 = () => {
-            mytag.style.backgroundImage = "url('/watch/5.jpeg')"
+        let change2 = () => {
+            let my = document.querySelector("#box")
+            my.style.backgroundColor = "blue"
         }
     </script>
+
 </body>
 
 </html>
