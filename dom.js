@@ -4,11 +4,11 @@
 
 //     document.querySelector("#myname").innerHTML = "Jay";
 //     document.querySelector("#myname1").innerHTML = "Jay deshmukh";
-    
+
 // }
 
 // let surname=()=>{
-   
+
 
 //    let mytag = document.querySelector(".surname")
 //    let mytag1 = document.querySelector(".surname")
@@ -21,33 +21,43 @@
 //   // change color (red button to red)
 //   // change color (green button to green)
 //   // change color (blue button to blue)
-    
+
 // }
 
-let mytag = document.querySelector("#changecolor")
+// let mytag = document.querySelector("#changecolor")
 
-let red=()=>{
-   mytag.style.backgroundImage = "url('download.jpeg')"
-   mytag.style.borderColor = "blue" 
-   mytag.style.borderWidth = "10px"
-}
-
-
-let green=()=>{
-  mytag.style.backgroundImage = "url('download 2.jpeg')"
-    mytag.style.borderColor = "red" 
-   mytag.style.borderWidth = "10px"
-}
+// let red=()=>{
+//    mytag.style.backgroundImage = "url('download.jpeg')"
+//    mytag.style.borderColor = "blue" 
+//    mytag.style.borderWidth = "10px"
+// }
 
 
-let blue=()=>{
-  mytag.style.backgroundImage = "url('download 1.jpeg')"
-    mytag.style.borderColor = "green" 
-   mytag.style.borderWidth = "10px"
-}
+// let green=()=>{
+//   mytag.style.backgroundImage = "url('download 2.jpeg')"
+//     mytag.style.borderColor = "red" 
+//    mytag.style.borderWidth = "10px"
+// }
 
-let reset=()=>{
- mytag.style.backgroundImage = ""
-    mytag.style.borderColor = "" 
-   mytag.style.borderWidth = ""
+
+// let blue=()=>{
+//   mytag.style.backgroundImage = "url('download 1.jpeg')"
+//     mytag.style.borderColor = "green" 
+//    mytag.style.borderWidth = "10px"
+// }
+
+// let reset=()=>{
+//  mytag.style.backgroundImage = ""
+//     mytag.style.borderColor = "" 
+//    mytag.style.borderWidth = ""
+// }
+
+let Showw = () => {
+   let num1 = document.querySelector("#num1").value
+   let num2 = document.querySelector("#num2").value
+
+   let show = document.querySelector("#show")
+
+   show.innerHTML = `The sum of ${num1} and ${num2} is ${parseInt
+      (num1) + parseInt(num2)}`
 }
