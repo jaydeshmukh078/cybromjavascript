@@ -34,6 +34,10 @@
 
     <p id="show"></p> -->
 
+
+    <input type="password" id="pass">
+   <button>Click me</button>
+
     <script>
         // let Showw = () => {
         //     let num1 = document.querySelector("#num1").value
@@ -45,7 +49,18 @@
         //     (num1) + Number(num2)}`
         //     }
             
-
+        let pass = document.querySelector("#pass").type
+        //change the type of the password field to text
+        document.querySelector("#pass").addEventListener("click", () =>
+        {
+            if(pass === "password"){
+                document.querySelector("#pass").type = "text"
+                }
+                else{
+                    document.querySelector("#pass").type = "password"
+                    }
+                    }
+                )
 
     </script>
 </body>
