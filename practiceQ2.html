@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Q2. (String Methods)
+Create a button that:
+Prompts the user for a sentence.
+Convert the entered sentence into uppercase.Display the result inside a <p> tag. -->
+
+
+    <button onclick="alfa()">give sentence</button>
+    <p class="pp"></p>
+
+
+
+    <script>
+        let alfa = () => {
+            let beta = prompt("give me a sentence do you want to change in to lowercase to uppercase")
+            let gama = document.querySelector(".pp").innerHTML=beta
+            //change gama lowercase in uppercase
+            gama = gama.toUpperCase()
+            document.querySelector(".pp").innerHTML=gama
+
+        }
+    </script>
+</body>
+</html>

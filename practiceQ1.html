@@ -12,10 +12,19 @@
 Button 1: Prompt the user to enter their favorite subject.
 Button 2: Display "Your favorite subject is: [subject]" in an <h4> tag using innerHTML. -->
 
+  <button class="btn" onclick="beta()">click me to give your favorite subject</button>
+    <h4 class="h4"></h4>
+
 
    <script>
 
-    
+    let beta=()=>{
+        let alfa = prompt("what is your favorite subject")
+
+        let btn = document.querySelector(".btn").innerHTML=alfa
+
+       let h4 = document.querySelector(".h4").innerHTML="Your favorite subject is: " + btn1
+    }
 
    </script>
 
