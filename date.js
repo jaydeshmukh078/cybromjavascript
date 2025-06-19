@@ -19,8 +19,11 @@ let  count=0;
 let starttiming=()=>{
 
     first = setInterval(()=>{
-    count++
-    console.log(count)}, 2000)
+    let mytag = document.querySelector("#num")
+    // count++
+    mytag.innerHTML = count++
+    // console.log(count)
+}, 1)
 } 
 
 let stoptiming=()=>{
