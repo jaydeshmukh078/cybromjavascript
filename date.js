@@ -13,7 +13,7 @@ let time = new Date()
 
 
 // print counting in console
-let  count=0;
+let  count=10;
  let first
 
 let starttiming=()=>{
@@ -23,7 +23,7 @@ let starttiming=()=>{
     // count++
     mytag.innerHTML = count++
     // console.log(count)
-}, 1)
+}, 1000)
 } 
 
 let stoptiming=()=>{

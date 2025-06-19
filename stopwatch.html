@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Stopwatch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .stopwatch {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .display {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+            font-family: monospace;
+        }
+
+        .controls {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-start {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .btn-start:hover {
+            background-color: #45a049;
+        }
+
+        .btn-stop {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .btn-stop:hover {
+            background-color: #da190b;
+        }
+
+        .btn-reset {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .btn-reset:hover {
+            background-color: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+    <div class="stopwatch">
+        <div class="display" id="display">00:00:00</div>
+        <div class="controls">
+            <button class="btn btn-start" id="startBtn" onclick="startStop()">Start</button>
+            <button class="btn btn-reset" id="resetBtn" onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script>
+        let startTime = 0;
+        let elapsedTime = 0;
+        let isRunning = false;
+        let intervalId = null;
+
+        const display = document.getElementById('display');
+        const startBtn = document.getElementById('startBtn');
+
+        function updateDisplay() {
+            const totalSeconds = Math.floor(elapsedTime / 1000);
+            const hours = Math.floor(totalSeconds / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = totalSeconds % 60;
+
+            const formattedTime = 
+                hours.toString().padStart(2, '0') + ':' +
+                minutes.toString().padStart(2, '0') + ':' +
+                seconds.toString().padStart(2, '0');
+
+            display.textContent = formattedTime;
+        }
+
+        function startStop() {
+            if (!isRunning) {
+                // Start the stopwatch
+                startTime = Date.now() - elapsedTime;
+                isRunning = true;
+                intervalId = setInterval(function() {
+                    elapsedTime = Date.now() - startTime;
+                    updateDisplay();
+                }, 100);
+                
+                startBtn.textContent = 'Stop';
+                startBtn.className = 'btn btn-stop';
+            } else {
+                // Stop the stopwatch
+                isRunning = false;
+                clearInterval(intervalId);
+                
+                startBtn.textContent = 'Start';
+                startBtn.className = 'btn btn-start';
+            }
+        }
+
+        function reset() {
+            isRunning = false;
+            clearInterval(intervalId);
+            elapsedTime = 0;
+            updateDisplay();
+            
+            startBtn.textContent = 'Start';
+            startBtn.className = 'btn btn-start';
+        }
+
+        // Initialize display
+        updateDisplay();
+    </script>
+</body>
+</html>
