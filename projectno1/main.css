@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#midNav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 30px;
+    font-family: "Inter",  sans-serif;
+}
+
+#rightNav button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: baseline;
+}
+
+#midNav ul {
+    display: flex;
+    gap: 50px;
+}

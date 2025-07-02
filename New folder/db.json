@@ -1,0 +1,40 @@
+{
+  "Bewkoof": [
+    {
+      "Name": "sid",
+      "Number": 12345755890,
+      "Checkindate": "2025-06-26",
+      "Checkoutdate": "2025-06-29",
+      "City": "pakistan",
+      "Person": 6,
+      "Total": 3000
+    },
+    {
+      "Name": "dev",
+      "Number": 123647448890,
+      "Checkindate": "2025-06-21",
+      "Checkoutdate": "2025-06-27",
+      "City": "bhopal",
+      "Person": 4,
+      "Total": 2000
+    },
+    {
+      "Name": "ram",
+      "Number": 123448890,
+      "Checkindate": "2025-06-24",
+      "Checkoutdate": "2025-06-29",
+      "City": "rampur",
+      "Person": 5,
+      "Total": 2500
+    },
+    {
+      "Name": "jay",
+      "Number": 123647890,
+      "Checkindate": "2025-06-21",
+      "Checkoutdate": "2025-06-28",
+      "City": "aajad",
+      "Person": 1,
+      "Total": 500
+    }
+  ]
+}
